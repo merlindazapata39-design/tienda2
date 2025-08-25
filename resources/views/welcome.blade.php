@@ -11,15 +11,15 @@
         <div class="bg-gray-900 h-5" ></div>
         <div class="bg-zinc-950 h-5"></div>
 
-        <div class="h-100 flex justify-center">
-            <div class="bg-red-100 w-120 h-70 text-center p-7 rounded-lg shadow-lg">
-                <h1 class="text-purple-700">FORMULARIO DE REGISTRO </h1> 
-                <label for=""> Inserte su nombre </label>
-                <input class="border border-zinc-950" type="text">  
+        <div class="h-120 flex justify-center">
+            <div class="bg-red-100 w-120 h-100 p-7 rounded-lg shadow-lg">
+                <h1 class="text-2xl font-bold mb-6 text-purple-700 text-center" >FORMULARIO DE REGISTRO </h1> 
+                <label for=""> NOMBRE </label>
+                <input class="w-full px-3 py-2 border rounded-lg border border-zinc-950" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"> 
                 
                 <div>
-                    <label for=""> Inserte su apellido </label>
-                    <input class="border border-zinc-950" type="text">
+                    <label for=""> APELLIDO </label>
+                    <input class="w-full border border-zinc-950" type="text">
                 </div>
 
                     <div>
@@ -51,7 +51,7 @@
           <div class="bg-gray-100 flex items-center justify-center min-h-screen">
 
             <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
-                <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Crea tu cuenta</h2>
+                <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">FORMULARIO DE REGISTRO</h2>
                 <form>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <div>
@@ -64,9 +64,14 @@
                     </div>
                 </div>
 
+                 <div class="mb-4">
+                    <label for="celular" class="block text-gray-700 text-sm font-bold mb-2">Numero de carnet</label>
+                    <input type="number" id="ci" name="ci" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ej: 123456789">
+                </div>
+
                 <div class="mb-4">
                     <label for="celular" class="block text-gray-700 text-sm font-bold mb-2">Celular</label>
-                    <input type="tel" id="celular" name="celular" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ej: 123456789">
+                    <input type="number" id="celular" name="celular" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ej: 123456789">
                 </div>
 
                 <div class="mb-4">
