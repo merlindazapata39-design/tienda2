@@ -13,7 +13,7 @@ class Persona extends Model
 
     protected $fillable = [
         'nombre',
-        'apllido', // Reemplaza esto por 'apellido' si corriges el nombre en la migración
+        'apellido',
         'ci',
         'celular',
         'fecha_de_nacimiento',

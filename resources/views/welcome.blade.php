@@ -1,108 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    </head>
-    <body>
-        <h1 class="bg-blue-400">hola</h1>
-        <div class="bg-gray-900 h-5" ></div>
-        <div class="bg-zinc-950 h-5"></div>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barra de Navegación</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
 
-        <div class="h-120 flex justify-center">
-            <div class="bg-red-100 w-120 h-100 p-7 rounded-lg shadow-lg">
-                <h1 class="text-2xl font-bold mb-6 text-purple-700 text-center" >FORMULARIO DE REGISTRO </h1> 
-                <label for=""> NOMBRE </label>
-                <input class="w-full px-3 py-2 border rounded-lg border border-zinc-950" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"> 
-                
-                <div>
-                    <label for=""> APELLIDO </label>
-                    <input class="w-full border border-zinc-950" type="text">
-                </div>
-
-                    <div>
-                        <label for=""> Inserte su numero de carnet </label>
-                        <input class="border border-zinc-950" type="number"> 
-                    </div>
-
-                <div>
-                    <label for="">Fecha de nacimiento</label>
-                    <input class="border border-zinc-950" type="date">  
-                </div>
-
-                <div>
-                        <label for="">Inserte su numero de celular</label>
-                        <input class="border border-zinc-950" type="number"> 
-                </div>
-
-                <div>
-                    <label for="">Inserte su correo</label>
-                    <input class="border border-zinc-950" type="emaiL">  
-                </div>
-
-                <button>Enviar</button>
-                <button>Borrar formulario</button>
-            </div>   
-        </div>
-        
-
-          <div class="bg-gray-100 flex items-center justify-center min-h-screen">
-
-            <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
-                <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">FORMULARIO DE REGISTRO</h2>
-                <form>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                    <div>
-                    <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ingresa tu nombre">
-                    </div>
-                    <div>
-                    <label for="apellido" class="block text-gray-700 text-sm font-bold mb-2">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ingresa tu apellido">
-                    </div>
-                </div>
-
-                 <div class="mb-4">
-                    <label for="celular" class="block text-gray-700 text-sm font-bold mb-2">Numero de carnet</label>
-                    <input type="number" id="ci" name="ci" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ej: 123456789">
-                </div>
-
-                <div class="mb-4">
-                    <label for="celular" class="block text-gray-700 text-sm font-bold mb-2">Celular</label>
-                    <input type="number" id="celular" name="celular" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ej: 123456789">
-                </div>
-
-                <div class="mb-4">
-                    <label for="fecha_nacimiento" class="block text-gray-700 text-sm font-bold mb-2">Fecha de Nacimiento</label>
-                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                </div>
-
-                <div class="mb-6">
-                    <label for="correo" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico</label>
-                    <input type="email" id="correo" name="correo" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="usuario@ejemplo.com">
-                </div>
-
-                <button type="submit" class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Registrarse</button>
-                </form>
-            </div>
-
-            </div>
-
-        
-        <div>
-           <h1>GALERIA DE IMAGENES</h1> 
-           <img src="https://vanacco.com/wp-content/uploads/2020/06/Form-1.jpg" alt="">
-           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNjxD_8LS5onDYXz32lEpyds1ySaW7vvmsg&s" alt="">
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="#" class="text-xl font-bold text-blue-600">MiLogo</a>
         </div>
 
+        <!-- Menú en desktop -->
+        <div class="hidden md:flex md:items-center space-x-4">
+          <a href="{{route('persona.index')}}" class="text-gray-700 hover:text-blue-700">Gestionar persona</a>
+          <a href="#" class="text-gray-700 hover:text-blue-800">Gestionar productos</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">Gestionar ventas</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">Contacto</a>
+        </div>
 
-        <h2>Accesorios</h2>
-        <H3>Cadenas</H3>
-        <h4>Hombre</h4>
-        <h4>Mujer</h4>
-        <h2>Abarrotes</h2>
-        <h3>fideos</h3>
-    </body>
+        <!-- Botón hamburguesa -->
+        <div class="flex items-center md:hidden">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Inicio</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Servicios</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Acerca</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Contacto</a>
+    </div>
+  </nav>
+
+  <script>
+    // Script para mostrar/ocultar el menú móvil
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
 </html>
