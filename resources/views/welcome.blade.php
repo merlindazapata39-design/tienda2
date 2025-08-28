@@ -18,9 +18,9 @@
 
         <!-- Menú en desktop -->
         <div class="hidden md:flex md:items-center space-x-4">
-          <a href="{{route('persona.index')}}" class="text-gray-700 hover:text-blue-700">Gestionar persona</a>
-          <a href="#" class="text-gray-700 hover:text-blue-800">Gestionar productos</a>
-          <a href="#" class="text-gray-700 hover:text-blue-600">Gestionar ventas</a>
+          <a href="{{route('persona.index')}}" class="text-gray-700 hover:text-blue-500">Gestionar persona</a>
+          <a href="#" class="text-gray-700 hover:text-green-600">Gestionar productos</a>
+          <a href="#" class="text-gray-700 hover:text-red-300">Gestionar ventas</a>
           <a href="#" class="text-gray-700 hover:text-blue-600">Contacto</a>
         </div>
 

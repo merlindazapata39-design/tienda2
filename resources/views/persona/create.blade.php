@@ -14,7 +14,7 @@
 
             <div>
                 <label class="block">Nombre</label>
-                <input type="text" name="nombre" class="w-full border px-4 py-2 rounded" required>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre" class= "w-full border px-4 py-2 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500" required>
             </div>
 
             <div>
